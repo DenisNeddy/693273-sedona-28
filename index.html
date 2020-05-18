@@ -99,13 +99,38 @@
                </ul>
             </div>
          </section>
-         <section class="hotels-form"> 
+         <section class="hotels-form">
             <h2 class="visually-hidden">Поиск гостиницы</h2>
             <p>Заинтересовались?</p>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-            <form action="https://htmlacademy.ru" method="post">
-               <!--Тут будет форма-->
+            <form class="checking-date-form" action="https://htmlacademy.ru" method="post">
+               <fieldset>
+                  <legend>Поиск гостиницы в Седоне</legend>
+                  <div class="form-group">
+                     <label for="arrive-date-field">Дата заезда:</label>
+                     <input type="text" name="arrive-date" id="arrive-date-field" placeholder="24 апреля 2017">
+                     <button class="calendar-icon"><span class="visually-hidden">Календарь кнопка</span></button>
+                  </div>
+                  <div class="form-group">
+                     <label for="departure-date-field">Дата выезда:</label>
+                     <input type="text" name="departure-date" id="departure-date-field" placeholder="4 июля 2017">
+                     <button class="calendar-icon"><span class="visually-hidden">Календарь кнопка</span></button>
+                  </div>
+                  <div class="count-person">
+                     <label for="count-parrents-field">Взрослые:</label>
+                     <button class="min" type="button">-</button>
+                     <input class="text" name="count-parrents" id="count-parrents-field" value="2">
+                     <button class="max" type="button">+</button>
+                  </div>
+                  <div class="count-person">
+                     <label for="count-kids-field">Дети:</label>
+                     <button class="min" type="button">-</button>
+                     <input class="text" name="count-kids" id="count-kids-field" value="0">
+                     <button class="max" type="button">+</button>
+                  </div>
+               </fieldset>
             </form>
+            <img src="img/map.png" width="1199" height="593" alt="Карта с адресами отелей">
          </section>
       </main>
       <footer class="main-footer">
