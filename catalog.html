@@ -35,8 +35,59 @@
       </header>
       <main class="inner-page">
          <section class="inner-filter">
-            <h2>Фильтр каталога</h2>
-            <!--тут будет форма-->
+            <h2 class="visually-hidden">Фильтр каталога</h2>
+            <form action="#" method="post">
+               <fieldset class="infrastructure-field">
+                  <legend>Инфраструктрура</legend>
+                  <label>
+                  <input type="checkbox" name="pool" checked>
+                  Бассейн
+                  </label>
+                  <label>
+                  <input type="checkbox" name="parking">
+                  Парковка
+                  </label>
+                  <label>
+                  <input type="checkbox" name="wi-fi">
+                  Wi-Fi
+                  </label>
+               </fieldset>
+               <fieldset class="options-field">
+                  <legend>Тип жилья:</legend>
+                  <label>
+                  <input type="checkbox" name="hotel" checked>
+                  Гостиница
+                  </label>
+                  <label>
+                  <input type="checkbox" name="motel" checked>
+                  Мотель
+                  </label>
+                  <label>
+                  <input type="checkbox" name="apartments" checked>
+                  Апартаменты
+                  </label>
+               </fieldset>
+               <fieldset class="price">
+                  <legend>Стоимость в сутки(Р):</legend>
+                  <div class="price-count-wrapper">
+                     <label for="count-min-field"><span class="visually-hidden">от</span></label>
+                     <input type="text" name="count-min" id="count-min-field" value="от 0">
+                     <label for="count-max-field"><span class="visually-hidden">до</span></label>
+                     <input type="text" name="count-max" id="count-max-field" value="до 3000">
+                  </div>
+                  <div class="price-range">
+                     <div class="price-range-wrapper">
+                        <div class="range-max">
+                           <div class="bar"></div>
+                        </div>
+                     </div>
+                     <div class="price-controls">
+                        <div class="toggle toggle-min"></div>
+                        <div class="toggle toggle-max"></div>
+                     </div>
+                  </div>
+               </fieldset>
+            </form>
          </section>
          <section class="catalog">
             <h2 class="visually-hidden">Каталог отелей</h2>
