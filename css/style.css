@@ -1,0 +1,200 @@
+:root {
+  --basicWhite: #ffffff;
+  
+  --lightBlack: #333333;
+  --basicBlack: #000000;
+  
+  --lightGray: #f2f2f2;
+  --basicGray: #eeeeee;
+  --darkGray: #ebebeb;
+  --extraDarkGray: #a9a9a9;
+  
+  --lightBlue: #81b3d2;
+  --basicBlue: #669ec0;
+  --darkBlue: #5496bd;
+
+  --lightBrown: #766357;
+  --basicBrown: #604e43;
+  --darkBrown: #503e33;
+
+}
+
+
+body {
+  min-width: 1220px;
+
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--lightBlack);
+  background-color: var(--basicGray);
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1;
+  height: 1;
+  clip: rect(0,0,0,0);
+}
+
+
+.navigation-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.navigation-item a {
+  font-weight: 700;
+  color: var(--basicBlack);
+}
+
+
+.navigation-item a:not([href]) {
+  color: var(--lightBrown);
+}
+
+
+.navigation-item a[href]:hover,
+.navigation-item a[href]:focus{
+  color: var(--lightBlue);
+}
+
+
+.navigation-item a[href]:active{
+  color: var(--basicBlack);
+  opacity: 0.3;
+}
+
+
+.banner h2 {
+  font-size: 21px;
+  margin: 0;
+  color: var(--basicBlack);
+  text-align: center; 
+}
+
+
+.banner img {
+  background-color: var(--basicGray);
+}
+
+
+.advantage h2 {
+  font: inherit;
+  text-align: center;
+}
+
+
+.advantage-view-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.advantage-view-item .advantage-view-content {
+  color: var(--basicWhite);
+  background-color: var(--lightBlue);
+  text-align: center;
+}
+
+
+.advantage-view-content h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.advangtage-view-image {
+  background-color: var(--basicGray);
+}
+
+
+.advantage-no-view {
+  background-color: var(--basicGray);
+}
+
+
+.advantage-no-view-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.advantage-no-view-item {
+  text-align: center;
+}
+
+
+.advantage-no-view-item h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basicBlack);
+}
+
+
+.figures-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.figures-item {
+  text-align: center;
+}
+
+.figures-item h3 {
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basicBlack);
+}
+
+.hotels-form p{
+  text-align: center;
+}
+
+
+.hotels-form p:first-of-type {
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: 700;
+ 
+  color: var(--basicBlack);
+
+}
+
+.checking-date-form {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basicBlack);
+}
+
+.checking-date-form legend {
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--basicWhite);
+  background-color: var(--lightBrown);
+}
+
+.
