@@ -228,11 +228,32 @@ img {
   border: none;
 }
 
+.checking-date-form input:hover {
+  background-color: var(--darkGray);
+
+}
+
+.checking-date-form input:focus {
+  background-color: var(--basicWhite);
+  border: 2px solid var(--basicGray);
+}
 
 
 .count-person button {
   font: inherit;
   color: var(--extraDarkGray);
+}
+
+.count-person .min:hover,
+.count-person .min:focus,
+.count-person .max:hover,
+.count-person .max:focus {
+  color: var(--basicBlack);
+}
+
+.count-person .min:active,
+.count-person .max:active {
+  color: var(--lightBlue);
 }
 
 .button {
@@ -255,7 +276,108 @@ img {
 .button-form:active {
   background-color: var(--darkBlue);
   color: var(--specialWhite);
+  
+}
 
+/* Футер */
+
+
+.main-footer .contacts a {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basicBlack);
+}
+
+.main-footer .social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-footer .social-icon {
+  display: inline-block;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  background-color: var(--lightBlue);
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  background-color: var(--basicBlue);
+}
+
+.social-icon:active {
+  background-color: var(--darkBlue);
+}
+
+.social-icon-twitter:active::before,
+.social-icon-facebook:active::before,
+.social-icon-youtube:active::before {
+  opacity: 0.3;
+}
+
+.main-footer .social-icon-twitter:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/twitter.svg");
+  background-repeat: no-repeat;
+  transform: translate(-50%,-50%);
+  
+}
+
+.main-footer .social-icon-facebook::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 22px;
+  background-image: url("../img/fb-icon.svg");
+  background-repeat: no-repeat;
+  transform: translate(-50%,-50%);
+}
+
+
+.main-footer .social-icon-youtube::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 16px;
+  background-image: url("../img/youtube.svg");
+  background-repeat: no-repeat;
+  transform: translate(-50%,-50%);
+}
+
+.creators-logo img {
+
+  filter:  brightness(0);
+  
+}
+
+.creators-logo:hover img,
+.creators-logo:focus img {
+
+
+  filter:  brightness(1);
+  
+}
+
+
+.creators-logo:active img {
+
+
+  filter:  brightness(0) opacity(20%);
   
 }
 
