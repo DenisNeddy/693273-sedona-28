@@ -396,15 +396,47 @@ img {
   color: var(--basicBlack);
 }
 
+.catalog-item h3 a:hover,
+.catalog-item h3 a:focus {
+  color: var(--lightBlue);
+}
+
+.catalog-item h3 a:active {
+  opacity: 0.3;
+}
+
 .catalog-item .button-catalog {
   font-weight: bold;
   color: var(--basicWhite);
   background-color: var(--basicBlue);
 }
 
+.catalog-item .button-view:hover,
+.catalog-item .button-view:focus {
+  background-color: var(--basicBlue);
+}
+
+.catalog-item .button-view:active {
+  background-color: var(--darkBlue);
+  color: var(--specialWhite);
+}
+
 .catalog-item .button-booking {
   background-color: var(--lightBrown);
 }
+
+.catalog-item .button-booking:hover,
+.catalog-item .button-booking:focus  {
+
+  background-color: var(--basicBrown);
+}
+
+
+.catalog-item .button-booking:active {
+  background-color: var(--darkBrown);
+  color: var(--specialWhite);
+}
+
 
 
 .catalog-item .rating-stars-list {
