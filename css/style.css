@@ -27,7 +27,7 @@ body {
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
   color: var(--lightBlack);
@@ -188,22 +188,25 @@ img {
 }
 
 .hotels-form p{
+  line-height: 24px;
   text-align: center;
 }
 
 
 .hotels-form p:first-of-type {
   font-size: 30px;
-  line-height: 24px;
+ 
   font-weight: 700;
  
   color: var(--basicBlack);
 
 }
 
+
+
 .checking-date-form {
   font-size: 14px;
-  line-height: 26px;
+  line-height: 21px;
   font-weight: 700;
   color: var(--basicBlack);
 }
@@ -373,11 +376,52 @@ img {
   
 }
 
-
 .creators-logo:active img {
 
-
-  filter:  brightness(0) opacity(20%);
-  
+  filter:  brightness(0) opacity(20%); 
 }
 
+
+
+/* Страница Каталога*/
+
+.catalog {
+  background-color: var(--basicWhite);
+}
+
+.catalog-item h3 a{
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basicBlack);
+}
+
+.catalog-item .button-catalog {
+  font-weight: bold;
+  color: var(--basicWhite);
+  background-color: var(--basicBlue);
+}
+
+.catalog-item .button-booking {
+  background-color: var(--lightBrown);
+}
+
+
+.catalog-item .rating-stars-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-item .rating-stars-item {
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/star.svg");
+  background-repeat: no-repeat;
+
+}
+
+.catalog-item .rating-text {
+  background-color: var(--lightGray);
+  color: var(--lightBlack);
+}
