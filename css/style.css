@@ -1,7 +1,8 @@
 :root {
   --specialWhite: rgba(255,255,255,0.3);
   --basicWhite: #ffffff;
-  
+
+  --specialBlack: rgba(0,0,0,0.3);
   --lightBlack: #333333;
   --basicBlack: #000000;
   
@@ -384,6 +385,86 @@ img {
 
 
 /* Страница Каталога*/
+
+.inner-page .filter {
+  /* Временно */
+  color: var(--basicWhite);
+  background-color: var(--lightBlack);
+}
+
+
+.inner-page .filter legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.inner-page .price-count-wrapper {
+  
+  border: 2px solid var(--basicWhite);
+  border-radius: 3px;
+}
+
+.inner-page .price-count-wrapper input {
+  
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: var(--basicWhite);
+  background-color: transparent;
+  border: none;
+}
+
+.inner-page .price button {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--basicWhite);
+  background-color: transparent;
+  border: 2px solid var(--basicWhite);
+  border-radius: 3px;
+}
+
+.inner-page .catalog-filter-wrapper p:nth-of-type(1) {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basicBlack);
+}
+
+.inner-page .catalog-filter-wrapper p:nth-of-type(2) {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basicBlack);
+}
+
+.inner-page .sort-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.inner-page .sort-item a {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--specialBlack);
+}
+
+.inner-page .sort-item a:not(.active):hover,
+.inner-page .sort-item a:not(.active):focus {
+  color: var(--lightBlue);
+}
+
+.inner-page .sort-item a:not(.active):active {
+  color: var(--basicBlack);
+}
+
+.inner-page .sort-item .active {
+  color: var(--lightBlue);
+}
 
 .catalog {
   background-color: var(--basicWhite);
