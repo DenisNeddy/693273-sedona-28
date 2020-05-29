@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
+   <head>
       <meta charset="utf-8">
       <title>HTML Academy: Седона</title>
-      
       <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
       <link href="css/normalize.css" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
@@ -93,14 +92,14 @@
                </fieldset>
             </form>
          </section>
-         <section class="catalog">
+         <section class="catalog-filter">
             <h2 class="visually-hidden">Каталог отелей</h2>
-            <div class="catalog-filter">
+            <div class="catalog-filter-wrapper">
                <p>Найдено:3</p>
                <p>Сортировка:</p>
                <ul class="sort-list">
                   <li class="sort-item">
-                     <a class="active">По цене</a>
+                     <a href="#" class="active">По цене</a>
                   </li>
                   <li class="sort-item">
                      <a href="#">По типу</a>
@@ -117,8 +116,8 @@
                   <h3><a href="#">Amara Resort & Spa</a></h3>
                   <span>Гостиница</span>
                   <span>0т 4000 р.</span>
-                  <a class="button" href="#">Подробнее</a>
-                  <a class="button" href="#">Забронировать</a>
+                  <a class="button-catalog button-view" href="#">Подробнее</a>
+                  <a class="button-catalog button-booking" href="#">Забронировать</a>
                   <div class="rating-catalog-cart">
                      <ul class="rating-stars-list">
                         <li class="rating-stars-item"></li>
@@ -134,8 +133,8 @@
                   <h3><a href="#">Desert Quail Inn</a></h3>
                   <span>Мотель</span>
                   <span>от 3000 р.</span>
-                  <a class="button" href="#">Подробнее</a>
-                  <a class="button" href="#">Забронировать</a>
+                  <a class="button-catalog button-view" href="#">Подробнее</a>
+                  <a class="button-catalog button-booking" href="#">Забронировать</a>
                   <div class="rating-catalog-cart">
                      <ul class="rating-stars-list">
                         <li class="rating-stars-item"></li>
@@ -150,8 +149,8 @@
                   <h3><a href="#">Villas at Poco Diablo</a></h3>
                   <span>Апартаменты</span>
                   <span>от 2000 р.</span>
-                  <a class="button" href="#">Подробнее</a>
-                  <a class="button" href="#">Забронировать</a>
+                  <a class="button-catalog button-view" href="#">Подробнее</a>
+                  <a class="button-catalog button-booking" href="#">Забронировать</a>
                   <div class="rating-catalog-cart">
                      <ul class="rating-stars-list">
                         <li class="rating-stars-item"></li>
@@ -170,18 +169,24 @@
          </div>
          <ul class="social-list">
             <li class="social-item">
-               <a href="#" class="social-icon-twitter">Twitter</a>
+               <a href="#" class="social-icon social-icon-twitter">
+               <span class="visually-hidden">Twitter</span>
+               </a>
             </li>
             <li class="social-item">
-               <a href="#" class="social-icon-facebook">Facebook</a>
+               <a href="#" class="social-icon social-icon-facebook">
+               <span class="visually-hidden">Facebook</span>
+               </a>
             </li>
             <li class="social-item">
-               <a href="#" class="social-icon-youtube">Youtube</a>
+               <a href="#" class="social-icon social-icon-youtube">
+               <span class="visually-hidden">Youtube</span>
+               </a>
             </li>
          </ul>
          <div class="creators-logo">
             <span>website by</span>
-            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип создателей сайта"></a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy-active.png" width="115" height="41" alt="Логотип создателей сайта"></a>
          </div>
       </footer>
    </body>
