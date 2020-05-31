@@ -134,6 +134,7 @@ img {
 }
 
 .advantage {
+  position: relative;
   background-color: var(--basicWhite);
 }
 
@@ -171,6 +172,10 @@ img {
   order: -1;
 }
 
+.advantage-view-item:nth-child(2) {
+  margin-top: 330px;
+}
+
 .advantage-view-content h3 {
   padding-top: 49px;
   font-size: 21px;
@@ -192,23 +197,29 @@ img {
 
 
 .advantage-no-view {
+  min-height: 256px;
   background-color: var(--basicGray);
 }
 
 
 .advantage-no-view-list {
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-top: 47px;
 }
 
 
 .advantage-no-view-item {
+  width: 400px;
   text-align: center;
 }
 
 
 .advantage-no-view-item h3 {
+  padding-left: 140px;
+  padding-right: 140px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -216,14 +227,32 @@ img {
 }
 
 
+.advantage-no-view-item p {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.figures {
+  min-height: 330px;
+  position: absolute;
+  top: 296px;
+  left: 0;
+
+  background-color: var(--basicWhite);
+}
+
 .figures-list {
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .figures-item {
+  padding-top: 160px;
+  width: 400px;
   text-align: center;
+
 }
 
 .figures-item h3 {
