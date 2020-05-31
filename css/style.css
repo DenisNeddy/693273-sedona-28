@@ -47,6 +47,20 @@ img {
 }
 
 
+/*Сетки*/
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+
+}
+
 .visually-hidden {
   position: absolute;
   width: 1;
@@ -54,7 +68,15 @@ img {
   clip: rect(0,0,0,0);
 }
 
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+
+  background-color: rgba(0,255,0,0.5);
+}
+
 .site-navigation {
+  display: flex;
   background-color: var(--basicWhite);
 }
 
@@ -62,6 +84,7 @@ img {
 .navigation-list {
   list-style: none;
   margin: 0;
+  margin-top: 15px;
   padding: 0;
 }
 
@@ -86,19 +109,26 @@ img {
 
 
 .banner {
+  display: flex;
+  flex-direction: column;
   background-color: var(--basicWhite);
 }
 
 
 .banner h2 {
   font-size: 21px;
+  line-height: 26px;
   margin: 0;
+  padding-top: 20px;
   color: var(--basicBlack);
   text-align: center; 
+
+  background-color: rgba(0,255,0, 0.4);
 }
 
 
 .banner img {
+  order: -1;
   background-color: var(--basicGray);
 }
 
@@ -280,6 +310,10 @@ img {
 }
 
 /* Футер */
+
+.main-footer {
+  background-color: var(--basicWhite);
+}
 
 
 .main-footer .contacts a {
