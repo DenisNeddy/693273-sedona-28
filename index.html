@@ -8,8 +8,9 @@
       <link href="css/style.css" rel="stylesheet">
    </head>
    <body class="page-body">
+     <div class="body-wrapper">
       <header class="main-header">
-         <div class="wrapper">
+         <div >
             <nav class="site-navigation">
                <a class="header-logo"><img src="img/logo.png" width="138" height="70" alt="Логотип копании Седона"></a>
                <ul class="navigation-list">
@@ -37,11 +38,14 @@
             </nav>
          </div>
       </header>
-      <main class="wrapper">
+      <main class="">
          <h1 class="visually-hidden">Туры в город Седона</h1>
          <section class="banner">
-            <h2>Седона - небольшой городок в аризоне,<br> заслуживающий большего!</h2>
-            <img src="img/background-photo.jpg" width="1200" height="509" alt="Картинка пейзажа Аризоны">
+            <h2>Седона - небольшой городок в аризоне,<br> заслуживающий большего!
+            </h2>
+            <div class="img-wrapper">
+              <img src="img/background-photo.jpg" width="1200" height="509" alt="Картинка пейзажа Аризоны">
+            </div>
          </section>
          <section class="advantage">
             <h2>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон</h2>
@@ -57,14 +61,16 @@
                   </div>
                </li>
                <li class="advantage-view-item">
+               
                   <div class="advantage-view-content">
                      <h3>Там есть<br> мост дьявола</h3>
                      <span>— №2 —</span>
-                     <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                     <p>Да, по нему можно пройти!Если конечно вы осмелитесь</p>
                   </div>
                   <div class="advantage-view-image">
                      <img src="img/image-1.jpg" width="800" height="256" alt="Пейзажные фотографии города Седона1">
                   </div>
+                 
                </li>
             </ul>
             <div class="advantage-no-view">
@@ -109,7 +115,9 @@
             <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
             <form class="checking-date-form" action="https://htmlacademy.ru" method="post">
                <fieldset>
+               
                   <legend>Поиск гостиницы в Седоне</legend>
+                 <div class="form-wrapper">
                   <div class="form-group">
                      <label for="arrive-date-field">Дата заезда:</label>
                      <input type="text" name="arrive-date" id="arrive-date-field" placeholder="24 апреля 2017">
@@ -132,6 +140,7 @@
                      <input class="text" name="count-kids" id="count-kids-field" value="0">
                      <button class="max" type="button">+</button>
                   </div>
+                  </div>
                </fieldset>
                <button type="button" class="button button-form" name="button-search">
                Найти
@@ -140,7 +149,7 @@
             <img src="img/map.jpg" width="1200" height="593" alt="Карта с адресами отелей">
          </section>
       </main>
-      <footer class="main-footer wrapper">
+      <footer class="main-footer">
          <div class="contacts">
             <a href="#">#visitSEDONA</a>
             <a href="tel:84956660166">тел: +7(495) 666-01-66</a>
@@ -171,5 +180,6 @@
             </a>
          </div>
       </footer>
+      </div>
    </body>
 </html>
