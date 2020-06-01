@@ -452,32 +452,21 @@ img {
 }
 
 
-.form-group .calendar-icon {
-  
-  border: none;
-  background-color: var(--lightGray);
-  cursor: pointer;
-  width: 42px;
-  height: 42px;
-  
- } 
- 
 
 
-.form-group .calendar-icon:before {
-  content: "";
-  display: block;
+
+.calendar-icon {
   position: absolute;
-  top: 10px;
+  top: 8px;
+  right: 8px;
+  border: none;
   width: 23px;
   height: 23px;
-  background-image: url("../img/calendar.svg");
-  background-repeat: no-repeat;
+  fill: var(--extraDarkGray);
+
+
 }
 
-.form-group input:hover + button {
-  background-color: var(--darkGray);
-}
 
 .checking-date-form input,
 .checking-date-form input::placeholder {
