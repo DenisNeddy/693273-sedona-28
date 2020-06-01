@@ -22,6 +22,7 @@
 }
 
 
+
 body {
   min-width: 1200px;
 
@@ -97,13 +98,13 @@ img {
 
 
 
-.navigation-item a:hover,
-.navigation-item a:focus{
+.navigation-item a[href]:hover,
+.navigation-item a[href]:focus{
   color: var(--lightBlue);
 }
 
 
-.navigation-item a:active{
+.navigation-item a[href]:active{
   color: var(--basicBlack);
   opacity: 0.3;
 }
@@ -444,28 +445,27 @@ img {
   transform: translate(-50%,-50%);
 }
 
-.creators-logo img {
-
-  filter:  brightness(0);
-  
+.creators-logo svg {
+  fill: var(--basicBlack);
 }
 
-.creators-logo:hover img,
-.creators-logo:focus img {
-
-
-  filter:  brightness(1);
-  
+.creators-logo svg:hover,
+.creators-logo svg:focus {
+  fill: var(--lightBlue);
 }
 
-.creators-logo:active img {
-
-  filter:  brightness(0) opacity(20%); 
+.creators-logo svg:active {
+  fill: var(--basicBlack);
+  opacity: 0.3;
 }
 
 
 
 /* Страница Каталога*/
+
+.inner-header .active{
+  color: var(--lightBrown);
+}
 
 .inner-page .filter {
   /* Временно */
