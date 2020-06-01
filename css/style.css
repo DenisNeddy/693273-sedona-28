@@ -434,6 +434,7 @@ img {
   padding-right: 55px;
 }
 
+
 .form-group {
   display: flex;
   justify-content: space-between;
@@ -442,6 +443,7 @@ img {
   margin-bottom: 35px;
   
 }
+
 
 .form-group label {
   align-self: center;
@@ -452,17 +454,31 @@ img {
 }
 
 
-
-
-
 .calendar-icon {
+  padding: 0;
   position: absolute;
-  top: 8px;
+  top: 9px;
   right: 8px;
   border: none;
-  width: 23px;
+  width: 21px;
   height: 23px;
   fill: var(--extraDarkGray);
+  background-color: transparent;
+  z-index: 100;
+
+}
+
+.calendar-icon:hover,
+.calendar-icon:focus {
+ fill: var(--basicBlack);
+ cursor: pointer;
+
+}
+
+
+.calendar-icon:active {
+ fill: var(--lightBlue);
+ outline: none;
 
 
 }
@@ -479,7 +495,7 @@ img {
 
 .form-group input {
 
-  width: 295px;
+  width: 335px;
   box-sizing: border-box;
   background-color: var(--lightGray);
   border: none;
@@ -522,7 +538,7 @@ img {
 }
 
 .count-person:nth-child(1) label {
-  margin-right: 40px;
+  margin-right: 50px;
 }
 
 
