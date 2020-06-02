@@ -906,7 +906,18 @@ img {
   border-radius: 3px;
 }
 
+.catalog-filter-wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--basicGray);
+}
+
+
+
 .catalog-filter-wrapper p:nth-of-type(1) {
+  margin-left: 72px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -914,6 +925,7 @@ img {
 }
 
 .catalog-filter-wrapper p:nth-of-type(2) {
+  margin-left: 47px;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
@@ -921,16 +933,27 @@ img {
 }
 
 .inner-page .sort-list {
+  display: flex;
   list-style: none;
   margin: 0;
+  margin-left: 40px;
   padding: 0;
 }
 
-.sort-item a {
+.sort-item {
+  margin-right: 32px;
+}
+
+.sort-item:last-child {
+  margin-right: 0;
+}
+
+.sort-item a:not(.active) {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
   color: var(--specialBlack);
+  border-bottom: 1px dotted var(--lightBlue);
 }
 
 .sort-item a:not(.active):hover,
@@ -949,9 +972,34 @@ img {
   background-color: var(--basicWhite);
 }
 
+.catalog-item {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 72px;
+
+  border-bottom: 1px solid var(--basicGray);
+}
+
+.catalog-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: tomato;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-wrapper-content {
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+
 .catalog-item-title a{
   font-size: 21px;
-  line-height: 21px;
   font-weight: 700;
   color: var(--basicBlack);
 }
@@ -966,6 +1014,10 @@ img {
 }
 
 .catalog-item .button-catalog {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 17px;
+  padding-right: 17px;
   font-weight: bold;
   color: var(--basicWhite);
   background-color: var(--basicBlue);
@@ -1016,4 +1068,9 @@ img {
 .catalog-item .rating-text {
   background-color: var(--lightGray);
   color: var(--lightBlack);
+}
+
+.inner-footer {
+  position: relative;
+  background-color: var(--basicWhite);
 }
