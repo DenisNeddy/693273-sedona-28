@@ -8,6 +8,7 @@
       <link href="css/style.css" rel="stylesheet">
    </head>
    <body>
+      <div class="body-wrapper">
       <header class="main-header inner-header">
          <nav class="site-navigation">
             <a href="index.html" class="header-logo"><img src="img/logo.png" width="138" height="70" alt="Логотип копании Седона"></a>
@@ -112,12 +113,19 @@
             <section class="catalog">
                <h2 class="visually-hidden">Выбор гостиниц в Седоне</h2>
                <article class="catalog-item">
+                   
                   <img src="img/amara.jpg" width="135" height="90" alt="Фотография гостиницы Amara">
+                  <div class="catalog-item-wrapper">
+                     <div class="catalog-wrapper-content">
                   <h3 class="catalog-item-title"><a href="#">Amara Resort & Spa</a></h3>
                   <span>Гостиница</span>
                   <span>0т 4000 р.</span>
+                     </div>
+                     <div class="catalog-wrapper-button">
                   <a class="button-catalog button-view" href="#">Подробнее</a>
                   <a class="button-catalog button-booking" href="#">Забронировать</a>
+               </div>
+                  </div>
                   <div class="rating-catalog-cart">
                      <ul class="rating-stars-list">
                         <li class="rating-stars-item"></li>
@@ -129,12 +137,14 @@
                   </div>
                </article>
                <article class="catalog-item">
+                 <div class="catalog-item-wrapper">
                   <img src="img/desert.jpg" width="135" height="90" alt="Фотография мотеля Desert">
                   <h3 class="catalog-item-title"><a href="#">Desert Quail Inn</a></h3>
                   <span>Мотель</span>
                   <span>от 3000 р.</span>
                   <a class="button-catalog button-view" href="#">Подробнее</a>
                   <a class="button-catalog button-booking" href="#">Забронировать</a>
+                  </div>
                   <div class="rating-catalog-cart">
                      <ul class="rating-stars-list">
                         <li class="rating-stars-item"></li>
@@ -145,12 +155,14 @@
                   </div>
                </article>
                <article class="catalog-item">
+                 <div class="catalog-item-wrapper">
                   <img src="img/villas.jpg" width="135" height="90" alt="Фотография апартаментов Villas">
                   <h3 class="catalog-item-title"><a href="#">Villas at Poco Diablo</a></h3>
                   <span>Апартаменты</span>
                   <span>от 2000 р.</span>
                   <a class="button-catalog button-view" href="#">Подробнее</a>
                   <a class="button-catalog button-booking" href="#">Забронировать</a>
+                  </div>
                   <div class="rating-catalog-cart">
                      <ul class="rating-stars-list">
                         <li class="rating-stars-item"></li>
@@ -162,7 +174,7 @@
             </section>
          </section>
       </main>
-      <footer class="main-footer wrapper">
+      <footer class="main-footer inner-footer">
          <div class="footer-contacts">
             <a href="#">#visitSEDONA</a>
             <a href="tel:84956660166">тел: +7(495) 666-01-66</a>
@@ -194,5 +206,6 @@
             </a>
          </div>
       </footer>
+   </div>
    </body>
 </html>
