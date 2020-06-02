@@ -63,7 +63,6 @@ img {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-
 }
 
 
@@ -74,6 +73,7 @@ img {
   height: 1px;
   clip: rect(1px,1px,1px,0);
 }
+
 
 .body-wrapper {
   width: 1200px;
@@ -88,23 +88,36 @@ img {
 
 .site-navigation {
   display: flex;
+  
   background-color: var(--basicWhite);
 }
 
+.header-logo {
+  position: absolute;
+  height: 100%;
+}
 
 .navigation-list {
-  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
   list-style: none;
   margin: 0;
   margin-top: 15px;
   padding: 0;
+  background-color: tomato;
 }
 
+.navigation-item {
+  margin-right: ;
+}
 
 .navigation-item a {
   font-weight: 700;
   color: var(--basicBlack);
 }
+
 
 
 .navigation-item a[href]:hover,
@@ -113,20 +126,20 @@ img {
 }
 
 
+
 .navigation-item a[href]:active{
   color: var(--basicBlack);
   opacity: 0.3;
 }
 
 
+
 .banner {
   display: flex;
   flex-direction: column;
   background-color: var(--basicWhite);
-  
-
-
 }
+
 
 
 .banner h2 {
