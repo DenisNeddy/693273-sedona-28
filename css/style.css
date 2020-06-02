@@ -1,5 +1,6 @@
 :root {
   --specialWhite: rgba(255,255,255,0.3);
+  --specialWhiteDark: rgba(255, 255, 255, 0.8);
   --basicWhite: #ffffff;
 
   --specialBlack: rgba(0,0,0,0.3);
@@ -77,6 +78,7 @@ img {
 .body-wrapper {
   width: 1200px;
   margin: 0 auto;
+  position: relative;
 
   background: var(--basicWhite);
 
@@ -315,11 +317,6 @@ img {
 }
 
 
-.advantage-no-view-item:nth-child(1) p {
-  padding-left: 96px;
-  padding-right: 96px;
-}
-
 .advantage-no-view-item:nth-child(2) p {
   padding-left: 60px;
   padding-right: 60px;
@@ -382,6 +379,7 @@ img {
 .hotels-form {
   position: relative;
   background-color: var(--basicWhite);
+ 
 }
 
 .hotels-form p{
@@ -628,6 +626,7 @@ img {
   padding-bottom: 16px;
   padding-left: 197px;
   padding-right: 197px;
+  cursor:pointer;
 }
 
 .button-form:hover,
@@ -646,9 +645,28 @@ img {
 /* Футер */
 
 .main-footer {
-  background-color: var(--basicWhite);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--specialWhiteDark);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 120px;
+  padding-left: 171px;
+  padding-right: 101px;
+  
+  }
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
 }
 
+.footer-contacts a:nth-child(1) {
+  margin-bottom:9px;
+}
 
 .footer-contacts a {
   font-size: 21px;
@@ -658,9 +676,18 @@ img {
 }
 
 .main-footer .social-list {
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.social-list .social-item {
+  margin-right: 6px;
+}
+
+.social-list .social-item:last-child {
+  margin-right: 0;
 }
 
 .main-footer .social-icon {
@@ -725,6 +752,18 @@ img {
   background-image: url("../img/youtube.svg");
   background-repeat: no-repeat;
   transform: translate(-50%,-50%);
+}
+.creators-logo {
+  display: flex;
+  align-items: center;
+ 
+}
+
+.creators-logo span {
+  display: inline;
+  margin-right: 8px;
+  
+
 }
 
 .creators-logo svg {
