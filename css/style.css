@@ -575,7 +575,6 @@ img {
  fill: var(--lightBlue);
  outline: none;
 
-
 }
 
 
@@ -589,7 +588,6 @@ img {
 }
 
 .form-group input {
-
   width: 335px;
   box-sizing: border-box;
   background-color: var(--lightGray);
@@ -613,13 +611,14 @@ img {
 
 .checking-date-form input:hover {
   background-color: var(--darkGray);
-
 }
+
 
 .checking-date-form input:focus {
   background-color: var(--basicWhite);
   border: 2px solid var(--basicGray);
 }
+
 
 .count-wrapper {
   display: flex;
@@ -872,12 +871,49 @@ img {
   background-color: var(--lightBlack);
 }
 
+.filter {
+  box-sizing: border-box;
+  background-image: url("../img/background-filter.jpg");
+  background-repeat: no-repeat;
+}
+
+.filter form {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 27px;
+  padding-left: 72px;
+  padding-right: 72px;
+
+}
 
 .filter legend {
+ 
+  margin-bottom: 25px;
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
 }
+
+.filter fieldset {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+  border: none;
+  background-color: tomato;
+}
+
+.filter label {
+  margin-bottom: 22px;
+  font-size: 14px;
+  line-height: 24px;
+
+  background-color: teal;
+  }
+
+.filter label:last-child {
+  margin-bottom: 22px;
+}
+
 
 .inner-page .price-count-wrapper {
   
@@ -895,6 +931,38 @@ img {
   background-color: transparent;
   border: none;
 }
+.price-range-wrapper {
+  position: relative;
+}
+
+.price-range-wrapper .range-max {
+  margin-top: 20px;
+  margin-bottom: 33px;
+  width: 100%;
+  height: 2px;
+
+  background-color: var(--specialWhite);
+}
+
+.price-range-wrapper .bar {
+  width: 70%;
+  height: 2px;
+  background-color: var(--basicWhite);
+}
+
+.price-controls .toggle {
+  position: absolute;
+  top: -8px;
+  width: 14px;
+  height: 14px;
+  background-color: var(--basicBlack);
+  border: 9px solid var(--basicWhite);
+  border-radius: 50%;
+}
+
+.price-controls .toggle-max {
+  right: 90px;
+}
 
 .price button {
   font-size: 14px;
@@ -905,6 +973,7 @@ img {
   border: 2px solid var(--basicWhite);
   border-radius: 3px;
 }
+
 
 .catalog-filter-wrapper {
   display: flex;
