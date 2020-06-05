@@ -883,7 +883,7 @@ img {
   padding-top: 27px;
   padding-left: 72px;
   padding-right: 72px;
-  padding-bottom: 10px;
+  padding-bottom: 0;
 
 }
 
@@ -972,24 +972,23 @@ img {
   cursor: pointer;
 }
 
+
 .group-field .span_checkbox_off {
 
   position: absolute;
   top: 0;
   left: 0;
   display: inline-block;
-  width: 24px;
+  width: 26px;
   height: 24px;
   background-image: url("../img/checkbox-off.png");
-  background-repeat: no-repeat;
- 
+  background-repeat: no-repeat; 
 }
 
 
 input.input_checkbox:checked ~ .span_checkbox_off {
   background-image: url("../img/checkbox-on.png");
   background-repeat: no-repeat;
-
 }
 
 
@@ -1013,7 +1012,9 @@ input.input_checkbox:checked ~ .span_checkbox_off {
   background-color: var(--basicWhite);
 }
 
+
 .price-controls .toggle {
+  
   position: absolute;
   top: -8px;
   width: 20px;
@@ -1021,7 +1022,14 @@ input.input_checkbox:checked ~ .span_checkbox_off {
   background-color: var(--specialBlack);
   border: 9px solid var(--basicWhite);
   border-radius: 50%;
+  cursor: pointer;
 }
+
+.price-controls .toggle:hover {
+  transform: scale(1.2);
+}
+
+
 
 .price-controls .toggle-max {
   right: 90px;
@@ -1031,7 +1039,7 @@ input.input_checkbox:checked ~ .span_checkbox_off {
   text-align: center;
 }
 
-.price button {
+.price .price-count-button {
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 35px;
@@ -1046,15 +1054,80 @@ input.input_checkbox:checked ~ .span_checkbox_off {
   cursor: pointer;
 }
 
+.button-wrapper button:hover,
+.button-wrapper button:focus {
+  background-color: var(--basicWhite);
+  color: var(--basicBlack);
+}
+
 
 .catalog-filter-wrapper {
   display: flex;
   align-items: center;
+  
   padding-top: 9px;
   padding-bottom: 10px;
   border-bottom: 1px solid var(--basicGray);
+ 
 }
 
+.filter-arrows {
+  position: relative;
+  width: 38px;
+  height: 12px;
+  margin-left: auto;
+  margin-right: 72px;
+}
+
+.arrows {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 11px;
+  height: 11px;
+  background-image: url("../img/icon-down-dir-active.svg");
+  
+  transform: rotate(180deg); 
+  cursor: pointer;
+}
+
+
+.arrows::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 1px;
+  left: 27px;
+  width: 11px;
+  height: 11px;
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  transform: rotate(180deg); 
+  opacity: 0.3;
+}
+
+.arrows:hover,
+.arrows:focus,
+.arrows:hover::after,
+.arrows:focus::after {
+  opacity: 1;
+}
+
+.arrows:active,
+.arrows:active::after {
+  opacity: 1;
+  background-image: url("../img/icon-down-dir-active.svg");
+  transform: rotate(180deg); 
+}
+
+
+
+
+.catalog-filter-wrapper::before:hover {
+  background-image: url("../img/icon-down-dir-active.svg");
+  opacity: 1;
+}
 
 
 .catalog-filter-wrapper p:nth-of-type(1) {
@@ -1211,9 +1284,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 margin-right: 71px;
-  
-
-  
+ 
 }
 
 
