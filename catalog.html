@@ -42,51 +42,62 @@
                <form action="https://echo.htmlacademy.ru/" method="post">
                   <fieldset class="fieldset-wrapper infrastructure-field">
                      <legend>Инфраструктрура:</legend>
-                     <div class="group-field">
+                   
+                       <ul class="checkbox-list">  
+                        <li class="checkbox-item">
                         <label class="label_checkbox">
                         <input type="checkbox" class="input_checkbox"  name="pool" checked>
                         Бассейн
                         <span class="span_checkbox_off span_checkbox_on"></span>
                         </label>
-                     </div>
-                     <div class="group-field">
+                        </li>
+                        <li class="checkbox-item">
+                     
                         <label class="label_checkbox">
                         <input type="checkbox" class="input_checkbox" name="parking" >
                         Парковка
                         <span class="span_checkbox_off span_checkbox_on"></span>
                         </label>
-                     </div>
-                     <div class="group-field">
+                     </li>
+                     <li class="checkbox-item">
+                     
                         <label class="label_checkbox" >
                         <input type="checkbox" class="input_checkbox" name="wi-fi">
                         Wi-Fi
                         <span class="span_checkbox_off span_checkbox_on"></span>
                         </label>
-                     </div>
+                     </li>
+                     </ul>
+                      
+
                   </fieldset>
                   <fieldset class="fieldset-wrapper options-field">
                      <legend>Тип жилья:</legend>
-                     <div class="group-field">
+                    
+                    <ul class="checkbox-list">
+                     <li class="checkbox-item">
                         <label class="label_checkbox">
                         <input type="checkbox" class="input_checkbox" name="hotel" checked>
                         Гостиница
                         <span class="span_checkbox_off span_checkbox_on"></span>
                         </label>
-                     </div>
-                     <div class="group-field">
+                     </li>
+                     <li class="checkbox-item">
                         <label class="label_checkbox">
                         <input type="checkbox" class="input_checkbox" name="motel" checked>
                         Мотель
                         <span class="span_checkbox_off span_checkbox_on"></span>
                         </label>
-                     </div>
-                     <div class="group-field">
+                     </li>
+                     <li class="checkbox-item">
+                     
                         <label class="label_checkbox">
                         <input type="checkbox" class="input_checkbox" name="apartments" checked disabled>
                         Апартаменты
                         <span class="span_checkbox_off span_checkbox_on"></span>
                         </label>
-                     </div>
+                     </li>
+                     </ul>
                   </fieldset>
                   <fieldset class="fieldset-wrapper price">
                      <legend>Стоимость в сутки(Р):</legend>
@@ -107,9 +118,8 @@
                            <div  type="button" class="toggle toggle-max"></div>
                         </div>
                      </div>
-                     <div class="button-wrapper">
                         <button type="submit" class="price-count-button">Показать</button>
-                     </div>
+                     
                   </fieldset>
                </form>
             </section>
@@ -129,9 +139,18 @@
                         <a href="#">По рейтингу</a>
                      </li>
                   </ul>
-                  <div class="filter-arrows">
-                     <span class="arrows"></span>
-                  </div>
+                  <ul class="arrows-list">
+                     <li class="arrows-item">
+                        <a href="#">
+                          <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L11 10H0"/></svg>     
+                        </a>
+                     </li>
+                       <li class="arrows-item">
+                        <a href="#">
+                            <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L11 10H0" /></svg>    
+                        </a>
+                     </li>
+                  </ul>
                </div>
                <section class="catalog">
                   <h2 class="visually-hidden">Выбор гостиниц в Седоне</h2>
