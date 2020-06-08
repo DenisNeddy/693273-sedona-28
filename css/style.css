@@ -108,6 +108,7 @@ img {
 .navigation-list {
   display: flex;
   justify-content: start;
+  flex-wrap: wrap;
   width: 100%;
   max-width: 1200px;
   list-style: none;
