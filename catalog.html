@@ -42,61 +42,54 @@
                <form action="https://echo.htmlacademy.ru/" method="post">
                   <fieldset class="fieldset-wrapper infrastructure-field">
                      <legend>Инфраструктрура:</legend>
-                   
-                       <ul class="checkbox-list">  
+                     <ul class="checkbox-list">
                         <li class="checkbox-item">
-                        <label class="label_checkbox">
-                        <input type="checkbox" class="input_checkbox"  name="pool" checked>
-                        Бассейн
-                        <span class="span_checkbox_off span_checkbox_on"></span>
-                        </label>
+                           <label class="label-checkbox">
+                           <input type="checkbox" class="input-checkbox"  name="pool" checked>
+                           Бассейн
+                           <span class="span-checkbox"></span>
+                           </label>
                         </li>
                         <li class="checkbox-item">
-                     
-                        <label class="label_checkbox">
-                        <input type="checkbox" class="input_checkbox" name="parking" >
-                        Парковка
-                        <span class="span_checkbox_off span_checkbox_on"></span>
-                        </label>
-                     </li>
-                     <li class="checkbox-item">
-                     
-                        <label class="label_checkbox" >
-                        <input type="checkbox" class="input_checkbox" name="wi-fi">
-                        Wi-Fi
-                        <span class="span_checkbox_off span_checkbox_on"></span>
-                        </label>
-                     </li>
+                           <label class="label-checkbox">
+                           <input type="checkbox" class="input-checkbox" name="parking" >
+                           Парковка
+                           <span class="span-checkbox"></span>
+                           </label>
+                        </li>
+                        <li class="checkbox-item">
+                           <label class="label-checkbox" >
+                           <input type="checkbox" class="input-checkbox" name="wi-fi">
+                           Wi-Fi
+                           <span class="span-checkbox"></span>
+                           </label>
+                        </li>
                      </ul>
-                      
-
                   </fieldset>
                   <fieldset class="fieldset-wrapper options-field">
                      <legend>Тип жилья:</legend>
-                    
-                    <ul class="checkbox-list">
-                     <li class="checkbox-item">
-                        <label class="label_checkbox">
-                        <input type="checkbox" class="input_checkbox" name="hotel" checked>
-                        Гостиница
-                        <span class="span_checkbox_off span_checkbox_on"></span>
-                        </label>
-                     </li>
-                     <li class="checkbox-item">
-                        <label class="label_checkbox">
-                        <input type="checkbox" class="input_checkbox" name="motel" checked>
-                        Мотель
-                        <span class="span_checkbox_off span_checkbox_on"></span>
-                        </label>
-                     </li>
-                     <li class="checkbox-item">
-                     
-                        <label class="label_checkbox">
-                        <input type="checkbox" class="input_checkbox" name="apartments" checked disabled>
-                        Апартаменты
-                        <span class="span_checkbox_off span_checkbox_on"></span>
-                        </label>
-                     </li>
+                     <ul class="checkbox-list">
+                        <li class="checkbox-item">
+                           <label class="label-checkbox">
+                           <input type="checkbox" class="input-checkbox" name="hotel" checked>
+                           Гостиница
+                           <span class="span-checkbox"></span>
+                           </label>
+                        </li>
+                        <li class="checkbox-item">
+                           <label class="label-checkbox">
+                           <input type="checkbox" class="input-checkbox" name="motel" checked>
+                           Мотель
+                           <span class="span-checkbox"></span>
+                           </label>
+                        </li>
+                        <li class="checkbox-item">
+                           <label class="label-checkbox">
+                           <input type="checkbox" class="input-checkbox" name="apartments" checked disabled>
+                           Апартаменты
+                           <span class="span-checkbox"></span>
+                           </label>
+                        </li>
                      </ul>
                   </fieldset>
                   <fieldset class="fieldset-wrapper price">
@@ -118,8 +111,7 @@
                            <div  type="button" class="toggle toggle-max"></div>
                         </div>
                      </div>
-                        <button type="submit" class="price-count-button">Показать</button>
-                     
+                     <button type="submit" class="price-count-button">Показать</button>
                   </fieldset>
                </form>
             </section>
@@ -142,12 +134,16 @@
                   <ul class="arrows-list">
                      <li class="arrows-item">
                         <a href="#">
-                          <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L11 10H0"/></svg>     
+                           <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M5.5 0L11 10H0"/>
+                           </svg>
                         </a>
                      </li>
-                       <li class="arrows-item">
+                     <li class="arrows-item">
                         <a href="#">
-                            <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L11 10H0" /></svg>    
+                           <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M5.5 0L11 10H0" />
+                           </svg>
                         </a>
                      </li>
                   </ul>
@@ -155,15 +151,17 @@
                <section class="catalog">
                   <h2 class="visually-hidden">Выбор гостиниц в Седоне</h2>
                   <article class="catalog-item">
-                     <img src="img/amara.jpg" width="135" height="90" alt="Фотография гостиницы Amara">
-                     <div class="catalog-item-wrapper">
-                        <div class="catalog-wrapper-content">
-                           <h3 class="catalog-item-title"><a href="#">Amara Resort & Spa</a></h3>
+                     <div class="catalog-image">
+                        <img src="img/amara.jpg" width="135" height="90" alt="Фотография гостиницы Amara">
+                     </div>
+                     <div class="catalog-info">
+                        <h3 class="catalog-item-title"><a href="#">Amara Resort & Spa</a></h3>
+                        <div class="catalog-content">
                            <span>Гостиница</span>
-                           <span>0т 4000 р.</span>
-                        </div>
-                        <div class="catalog-wrapper-button">
                            <a class="button-catalog button-view" href="#">Подробнее</a>
+                        </div>
+                        <div class="catalog-content">
+                           <span>0т 4000 р.</span>
                            <a class="button-catalog button-booking" href="#">Забронировать</a>
                         </div>
                      </div>
@@ -178,15 +176,17 @@
                      </div>
                   </article>
                   <article class="catalog-item">
-                     <img src="img/desert.jpg" width="135" height="90" alt="Фотография мотеля Desert">
-                     <div class="catalog-item-wrapper">
-                        <div class="catalog-wrapper-content">
-                           <h3 class="catalog-item-title"><a href="#">Desert Quail Inn</a></h3>
+                     <div class="catalog-image">
+                        <img src="img/desert.jpg" width="135" height="90" alt="Фотография мотеля Desert">
+                     </div>
+                     <div class="catalog-info">
+                        <h3 class="catalog-item-title"><a href="#">Desert Quail Inn</a></h3>
+                        <div class="catalog-content">
                            <span>Мотель</span>
-                           <span>от 3000 р.</span>
-                        </div>
-                        <div class="catalog-wrapper-button">
                            <a class="button-catalog button-view" href="#">Подробнее</a>
+                        </div>
+                        <div class="catalog-content">
+                           <span>от 3000 р.</span> 
                            <a class="button-catalog button-booking" href="#">Забронировать</a>
                         </div>
                      </div>
@@ -200,15 +200,17 @@
                      </div>
                   </article>
                   <article class="catalog-item">
-                     <img src="img/villas.jpg" width="135" height="90" alt="Фотография апартаментов Villas">  
-                     <div class="catalog-item-wrapper">
-                        <div class="catalog-wrapper-content">
-                           <h3 class="catalog-item-title"><a href="#">Villas at Poco Diablo</a></h3>
+                     <div class="catalog-image">
+                        <img src="img/villas.jpg" width="135" height="90" alt="Фотография апартаментов Villas">  
+                     </div>
+                     <div class="catalog-info">
+                        <h3 class="catalog-item-title"><a href="#">Villas at Poco Diablo</a></h3>
+                        <div class="catalog-content">
                            <span>Апартаменты</span>
-                           <span>от 2000 р.</span>
-                        </div>
-                        <div class="catalog-wrapper-button">
                            <a class="button-catalog button-view" href="#">Подробнее</a>
+                        </div>
+                        <div class="catalog-content">
+                           <span>от 2000 р.</span>
                            <a class="button-catalog button-booking" href="#">Забронировать</a>
                         </div>
                      </div>
