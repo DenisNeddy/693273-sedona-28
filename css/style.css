@@ -884,17 +884,13 @@ img {
 
 
 /* Страница Каталога*/
-.inner-header .navigation-item:nth-child(1) a {
-	margin-left: 40px;
-	margin-right: 116px;
-}
 
 .inner-header .active{
   color: var(--lightBrown);
 }
 
 .inner-page .filter {
-  /* Временно */
+  
   color: var(--basicWhite);
   background-color: var(--lightBlack);
 }
