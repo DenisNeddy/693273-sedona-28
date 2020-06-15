@@ -114,13 +114,13 @@ img {
   margin-top: 17px;
   margin-left: 2px;
   padding: 0;
-  padding-left: 16px;
-  padding-right: 16px;
+  margin-left: 57px;
+ 
   
 }
 
 .navigation-item:nth-child(1) a {
-  margin-right: 157px;
+  margin-right: 117px;
 }
 
 .navigation-item:nth-child(2) a {
