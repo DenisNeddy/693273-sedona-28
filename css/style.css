@@ -499,7 +499,7 @@ img {
 
 .checking-date-form {
   width: 568px;
-  
+  z-index: 10000;
   position: absolute;
   top: 178px;
   left: 316px;
@@ -738,6 +738,16 @@ img {
   color: var(--specialWhite);
   
 }
+
+.hotels-form .map-group {
+  min-height: 593px;
+  background-color: var(--basicBrown);
+  background-image: url("../img/map.jpg");
+  background-size: 1200px height 593px;
+  background-repeat: no-repeat;
+}
+
+
 
 /* Футер */
 
@@ -1144,7 +1154,6 @@ img {
 }
 
 
-
 .catalog-filter-wrapper::before:hover {
   background-image: url("../img/icon-down-dir-active.svg");
   opacity: 1;
@@ -1321,8 +1330,6 @@ img {
   background-color: var(--darkBrown);
   color: var(--specialWhite);
 }
-
-
 
 
 .rating-catalog-cart {
