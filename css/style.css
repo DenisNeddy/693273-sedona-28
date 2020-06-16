@@ -1012,6 +1012,10 @@ img {
   background-repeat: no-repeat; 
   }
 
+.input-checkbox:focus + .span-checkbox { 
+    outline: double;
+}
+
 
 .input-checkbox:checked ~ .span-checkbox {
   background-image: url("../img/checkbox-on.png");
@@ -1159,6 +1163,11 @@ img {
 
 .range-controls .toggle-max {
   left: 252px;
+}
+
+.range-controls .toggle:hover,
+.range-controls .toggle:focus {
+  transform: scale(1.2);
 }
 
 .price .price-count-button {
