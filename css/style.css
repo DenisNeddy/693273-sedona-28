@@ -120,16 +120,16 @@ img {
 }
 
 .navigation-item:nth-child(1) a {
-  margin-right: 117px;
+  margin-right: 104px;
 }
 
 .navigation-item:nth-child(2) a {
   
-  margin-right: 360px;
+  margin-right: 389px;
 }
 
 .navigation-item:nth-child(3) a {
-  margin-right: 133px;
+  margin-right: 117px;
 }
 
 
@@ -272,7 +272,7 @@ img {
 
 
 .advantage-view-item:nth-child(2) {
-  margin-top: 325px; 
+  margin-top: 331px; 
 }
 
 
@@ -286,10 +286,14 @@ img {
   padding-right: 123px;
 }
 
+.advantage-view-item:nth-child(1) h3 {
+  padding-top: 44px;
+}
+
 .advantage-view-content h3 {
   margin-top: 0;
   margin-bottom: 25px;
-  padding-top: 50px;
+  padding-top: 47px;
   font-size: 21px;
   line-height: 24px;
   font-weight: bold;
@@ -328,7 +332,7 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-top: 26px;
+  padding-top: 22px;
   padding-bottom: 54px;
 }
 
@@ -374,7 +378,7 @@ img {
 .figures {
   
   position: absolute;
-  top: 326px;
+  top: 328px;
   left: 0;
 
   background-color: var(--basicWhite);
@@ -385,7 +389,8 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-top: 131px;
+  padding-top: 127px;
+  padding-bottom: 81px;
   position: relative;
 }
 
@@ -393,7 +398,6 @@ img {
   max-width: 400px;
   text-align: center;
 
-  padding-bottom: 80px;
 }
 
 .figures-item:nth-child(1)::before {
@@ -483,7 +487,7 @@ img {
 .hotels-form p:first-of-type {
   font-size: 30px;
   padding-top: 27px;
-  margin-bottom: 35px;
+  margin-bottom: 31px;
   font-weight: 700;
  
   color: var(--basicBlack);
@@ -501,7 +505,7 @@ img {
   width: 568px;
   z-index: 10000;
   position: absolute;
-  top: 178px;
+  top: 175px;
   left: 316px;
   margin: 0;
   padding: 0;
@@ -522,7 +526,7 @@ img {
 
 .checking-date-form legend {
   width: 100%;
-  padding: 32px 0;
+  padding: 33px 0;
   font-size: 21px;
   font-weight: 700;
   text-align: center;
@@ -561,7 +565,9 @@ img {
 }
 
 .form-group:nth-child(1) {
-  margin-top: 55px;
+  margin: 0;
+  margin-top: 52px;
+  margin-bottom: 27px;
 }
 
 
@@ -594,14 +600,7 @@ img {
 }
 
 
-.checking-date-form input,
-.checking-date-form input::placeholder {
-  font-size: 14px;
-  font-family: "PT Sans", Arial, sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: var(--basicBlack);
-}
+
 
 .form-group input {
   width: 345px;
@@ -609,6 +608,17 @@ img {
   background-color: var(--lightGray);
   border: 2px solid var(--lightGray);
 }
+
+.form-group input[type="text"]::placeholder {
+  font-size: 14px;
+  padding-left: 8px;
+  text-align: left;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--basicBlack);
+}
+
 
 .form-group:nth-child(1) label {
   margin-right: 20px;
@@ -621,11 +631,7 @@ img {
 }
 
 
-.checking-date-form input::placeholder {
-  padding: 6px 0;
-  padding-left: 13px;
 
-}
 
 .checking-date-form input:hover {
   background-color: var(--darkGray);
@@ -673,6 +679,11 @@ img {
   padding: 13px;
   background-color: var(--lightGray);
   border: none;
+}
+
+.count-person input[value] {
+  font-weight: 700;
+  
 }
 
 
@@ -760,8 +771,8 @@ img {
   bottom: 0;
   width: 100%;
   padding-top: 25px;
-  padding-left: 131px;
-  padding-right: 101px;
+  padding-left: 125px;
+  padding-right: 138px;
   padding-bottom: 42px;
   
   }
@@ -769,14 +780,16 @@ img {
 .footer-contacts {
   display: flex;
   flex-direction: column;
-  margin-right: 170px;
+  margin-right: 178px;
 }
 
 .footer-contacts a:nth-child(1) {
+  text-align: center;
   margin-bottom:9px;
 }
 
 .footer-contacts a {
+  display: inline-block;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -788,7 +801,7 @@ img {
   list-style: none;
   margin: 0;
   margin-right: auto;
-  margin-bottom: -17px;
+  margin-bottom: -22px;
   padding: 0;
 }
 
