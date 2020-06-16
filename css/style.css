@@ -607,7 +607,7 @@ img {
   width: 345px;
   box-sizing: border-box;
   background-color: var(--lightGray);
-  border: none;
+  border: 2px solid var(--lightGray);
 }
 
 .form-group:nth-child(1) label {
