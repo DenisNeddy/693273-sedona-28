@@ -758,6 +758,10 @@ img {
   background-repeat: no-repeat;
 }
 
+.map-group iframe {
+  border: 0;
+}
+
 
 /* Футер */
 
@@ -994,8 +998,7 @@ img {
 }
 
 .checkbox-item .input-checkbox {
-  -webkit-appearance:none;
-  appearance: none;
+  
 }
 
 .span-checkbox {
@@ -1009,7 +1012,7 @@ img {
   background-repeat: no-repeat; 
   }
 
-  
+
 .input-checkbox:checked ~ .span-checkbox {
   background-image: url("../img/checkbox-on.png");
   background-repeat: no-repeat;
