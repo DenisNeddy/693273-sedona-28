@@ -505,7 +505,7 @@ img {
   width: 568px;
   z-index: 10000;
   position: absolute;
-  top: 175px;
+  top: 263px;
   left: 316px;
   margin: 0;
   padding: 0;
@@ -518,30 +518,45 @@ img {
   background-color: var(--basicWhite);
 }
 
-.checking-date-form fieldset {
-  padding: 0;
-  margin: 0;
-  border: none;
+.form-arrive {
+  
 }
 
-.checking-date-form legend {
-  width: 100%;
-  padding: 33px 0;
+.head-form-button {
+  position: absolute;
+  top: 175px;
+  left: 316px;
+  padding: 32px 139px;
   font-size: 21px;
   font-weight: 700;
   text-align: center;
+  text-transform: uppercase;
   color: var(--basicWhite);
   background-color: var(--lightBrown);
+  border: none;
+  
+  z-index: 100;
 }
 
-.checking-date-form legend:hover,
-.checking-date-form legend:focus {
+
+.head-form-button:hover,
+.head-form-button:focus {
   background-color: var(--basicBrown);
 }
 
-.checking-date-form legend:active {
+.open-form-button:active {
   background-color: var(--darkBrown);
   color: var(--specialWhite);
+}
+
+.close-form {
+ display: none;
+  
+
+}
+
+.open-form {
+  display: block;
 }
 
 .form-wrapper {
@@ -1468,4 +1483,22 @@ margin-right: 72px;
   position: relative;
   padding-top: 16px;
   background-color: var(--basicWhite);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
