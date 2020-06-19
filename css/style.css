@@ -535,7 +535,7 @@ img {
   color: var(--basicWhite);
   background-color: var(--lightBrown);
   border: none;
-  
+  cursor: pointer;
   z-index: 100;
   
   
