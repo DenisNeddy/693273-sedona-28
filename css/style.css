@@ -498,29 +498,30 @@ img {
 	margin: 0;
   padding-bottom: 129px;
 
+
 }
 
 
 .checking-date-form {
-  width: 568px;
-  z-index: 10000;
-  position: absolute;
-  top: 263px;
+   position: absolute;
+  top: 262px;
   left: 316px;
+  width: 568px;
+  max-height: 395px;
   margin: 0;
   padding: 0;
+  
   padding-bottom: 55px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
   color: var(--basicBlack);
-  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  overflow: hidden;
   background-color: var(--basicWhite);
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  z-index: 99;
 }
 
-.form-arrive {
-  
-}
 
 .head-form-button {
   position: absolute;
@@ -536,6 +537,9 @@ img {
   border: none;
   
   z-index: 100;
+  
+  
+  
 }
 
 
@@ -550,10 +554,10 @@ img {
 }
 
 .close-form {
- 
- animation: slide 0.6s;
-  
-
+  padding: 0;
+  max-height: 0;
+  font: 0;
+  transition: 0.5s all;
 }
 
 .open-form {
@@ -1484,32 +1488,4 @@ margin-right: 72px;
   position: relative;
   padding-top: 16px;
   background-color: var(--basicWhite);
-}
-
-@keyframes slide {
-  0% {
-    transform: translateY(0);
-  }
-
-  30% {
-    transform: translateY(-100px);
-    height: 70%;
-    overflow: hidden;
-  }
-
- 
- 60% {
-    transform: translateY(-150px);
-   } 
-
-
- 80% {
-    transform: translateY(-200px);
-    
-  }
-
-  100% {
-    transform: translateY(-300px);
-    
-  }
 }
