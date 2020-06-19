@@ -10,5 +10,5 @@ formButton.onclick = function (evt) {
 
 headButton.onclick = function (evt) {
 	evt.preventDefault();
-	form.classList.remove('close-form');
+	form.classList.toggle('close-form');
 }
