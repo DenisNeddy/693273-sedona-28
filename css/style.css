@@ -551,7 +551,9 @@ img {
 }
 
 .close-form{
-  display: none;
+  height: 0;  
+  margin: 0;
+  padding: 0;
 }
 
 .open-form {
@@ -626,14 +628,13 @@ img {
 }
 
 
-
-
 .form-group input {
   width: 345px;
   box-sizing: border-box;
   background-color: var(--lightGray);
   border: 2px solid var(--lightGray);
 }
+
 
 .form-group input[type="text"] {
   font-size: 14px;
