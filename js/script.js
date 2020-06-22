@@ -25,10 +25,6 @@ form.addEventListener("submit", function (evt) {
     
   }
 
-  else {
-  	evt.preventDefault();
-  	form.classList.toggle('open-form');
-		
-  }
+  
  
 });
