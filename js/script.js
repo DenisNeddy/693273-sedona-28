@@ -4,6 +4,7 @@ var formButton = document.querySelector('.button-form');
 var arrive = document.querySelector('[name=arrive-date]')
 var departure = document.querySelector('[name=departure-date]');
 
+form.classList.remove('open-form');
 
 headButton.addEventListener("click", function (evt) {
 	
