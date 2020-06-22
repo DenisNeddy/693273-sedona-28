@@ -1344,6 +1344,7 @@ img {
 
 .sort-item a:not(.active):active {
   color: var(--basicBlack);
+  border-bottom: none;
 }
 
 
