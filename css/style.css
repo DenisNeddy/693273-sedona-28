@@ -635,7 +635,7 @@ img {
   border: 2px solid var(--lightGray);
 }
 
-.form-group input[type="text"]::placeholder {
+.form-group input[type="text"] {
   font-size: 14px;
   padding-left: 8px;
   text-align: left;
