@@ -506,12 +506,14 @@ img {
    position: absolute;
   top: 262px;
   left: 316px;
-  width: 568px;  
+  width: 568px;
+  height: 0;  
   margin: 0;
   padding: 0;
-  max-height: 0;
-  font: 0;
+  
+  
   color: var(--basicBlack);
+  
   overflow: hidden;
   background-color: var(--basicWhite);
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
@@ -553,17 +555,18 @@ img {
 }
 
 .open-form {
-  max-height: 395px;
-  padding-bottom: 55px;
-   font-size: 14px;
+  height: 395px;
+  font-size: 14px;
+  font-size: 14px;
   line-height: 21px;
   font-weight: 700;
-  color: var(--basicBlack);
+  
+  padding-bottom: 55px;
   overflow: hidden;
   background-color: var(--basicWhite);
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
-
   transition: 0.5s all;
+  
 
 }
 
@@ -766,12 +769,12 @@ img {
 }
 
 
-
 .button-form:active {
   background-color: var(--darkBlue);
   color: var(--specialWhite);
   
 }
+
 
 .hotels-form .map-group {
   min-height: 593px;
@@ -781,9 +784,11 @@ img {
   background-repeat: no-repeat;
 }
 
+
 .map-group iframe {
   border: 0;
 }
+
 
 .form-error {
 
@@ -1505,3 +1510,4 @@ margin-right: 72px;
   10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);} 
   20%, 40%, 60%, 80% {transform: translateX(10px);}
 }
+
