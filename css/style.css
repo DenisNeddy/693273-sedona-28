@@ -1020,6 +1020,7 @@ img {
 }
 
 .checkbox-item .label-checkbox {
+  position: relative;
   display: inline-block;
   cursor: pointer;
   vertical-align: middle;
@@ -1033,9 +1034,7 @@ img {
   padding-left: 38px;
 }
 
-.checkbox-item .input-checkbox {
-  
-}
+
 
 .span-checkbox {
   position: absolute;
@@ -1057,6 +1056,8 @@ img {
   background-image: url("../img/checkbox-on.png");
   background-repeat: no-repeat;
 }
+
+
 
 
 
