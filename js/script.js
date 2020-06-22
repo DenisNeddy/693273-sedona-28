@@ -23,8 +23,6 @@ form.addEventListener("submit", function (evt) {
      form.offsetWidth = form.offsetWidth;
      form.classList.add('form-error');
     
-  }
-
-  
+  }  
  
 });
