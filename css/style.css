@@ -573,7 +573,7 @@ img {
 }
 
 
-.open-form-button:active {
+.head-form-button:active {
   background-color: var(--darkBrown);
   color: var(--specialWhite);
 }
@@ -701,6 +701,7 @@ img {
 
 .checking-date-form input:hover {
   background-color: var(--darkGray);
+  border: 2px solid var(--darkGray);
 }
 
 
@@ -1604,7 +1605,7 @@ img {
 .catalog-item .button-catalog {
   display: inline-block;
 
-  padding-top: 4px;
+  padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 17px;
   padding-right: 17px;
