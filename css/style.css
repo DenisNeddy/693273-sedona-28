@@ -11,6 +11,7 @@
   --basicGray: #eeeeee;
   --darkGray: #ebebeb;
   --extraDarkGray: #a9a9a9;
+  --specialGray: #ababab;
   
   --lightBlue: #81b3d2;
   --basicBlue: #669ec0;
@@ -701,6 +702,10 @@ img {
 }
 
 
+.count-person button {
+  cursor: pointer;
+}
+
 .count-person .min,
 .count-person .max {
   
@@ -709,25 +714,38 @@ img {
   font-size: 21px;
   line-height: 38px;
   font-weight: 700;
-  vertical-align: center;
+  vertical-align: middle;
   
   color: var(--extraDarkGray);
   background-color: var(--lightGray);
 
   border: none;
 
+  
+
 }
 
-.count-person .min:hover,
-.count-person .min:focus,
-.count-person .max:hover,
-.count-person .max:focus {
-  color: var(--basicBlack);
+.min svg {
+  margin-bottom: 5px;
 }
 
-.count-person .min:active,
-.count-person .max:active {
-  color: var(--lightBlue);
+
+.min svg,
+.max svg {
+  fill: var(--extraDarkGray);
+  
+}
+
+.min:hover svg,
+.min:focus svg,
+.max:hover svg,
+.max:focus svg{
+  fill: var(--basicBlack);
+}
+
+.min:active svg,
+.max:active svg {
+  fill: var(--lightBlue);
 }
 
 .button {
@@ -1175,7 +1193,7 @@ img {
   height: 4px;
   padding: 0;
   border: 8px solid var(--basicWhite);
-  background-color: var(--darkGray);
+  background-color: var(--specialGray);
   border-radius: 50%;
   box-sizing: content-box;
   cursor: pointer;
@@ -1350,7 +1368,7 @@ img {
   display: flex;
   justify-content: start;
   padding-top: 26px;
-  padding-bottom: 21px;
+  padding-bottom: 22px;
   padding-left: 72px;
 
   border-bottom: 1px solid var(--basicGray);
@@ -1371,7 +1389,7 @@ img {
 .catalog-content span {
   display: block;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 
@@ -1483,13 +1501,17 @@ margin-right: 72px;
   display: inline-block;
   margin-bottom: 10px;
   padding: 3px 15px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 15px;
+  padding-right: 12px;
   background-color: var(--lightGray);
   color: var(--lightBlack);
 }
 
 .inner-footer {
   position: relative;
-  padding-top: 25px;
+  padding-top: 24px;
   background-color: var(--basicWhite);
 }
 
