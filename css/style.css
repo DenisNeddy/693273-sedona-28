@@ -701,6 +701,7 @@ img {
 
 .checking-date-form input:hover {
   background-color: var(--darkGray);
+  
   border: 2px solid var(--darkGray);
 }
 
