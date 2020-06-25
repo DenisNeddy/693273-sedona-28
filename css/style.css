@@ -582,9 +582,11 @@ img {
   color: var(--specialWhite);
 }
 
+
 .close-form {
   display: none;
 }
+
 
 .open-form {
   display: block;
