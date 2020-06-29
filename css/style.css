@@ -12,6 +12,7 @@
   --darkGray: #ebebeb;
   --extraDarkGray: #a9a9a9;
   --specialGray: #ababab;
+  --disabledGray: #6a6a6a;
   
   --lightBlue: #81b3d2;
   --basicBlue: #669ec0;
@@ -23,6 +24,7 @@
   --darkBrown: #503e33;
 
 }
+
 
 * {
   box-sizing: border-box;
@@ -54,9 +56,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-
-/*Сетки*/
 
 
 .page {
@@ -137,6 +136,7 @@ img {
 
 .navigation-item {
   width: 228px;
+
   cursor: pointer;
 }
 
@@ -145,6 +145,7 @@ img {
 .navigation-item:nth-child(2) {
   text-align: start;  
 }
+
 
 .navigation-item:nth-child(3) {
   margin-left: auto;
@@ -160,7 +161,6 @@ img {
 .navigation-item a { 
   font-weight: 700;
   color: var(--basicBlack);
-
 }
 
 
@@ -355,7 +355,7 @@ img {
 }
 
 
-.advantage-no-view-item:nth-child(1) p {
+.advantage-no-view-item:first-child p {
   padding-left: 96px;
   padding-right: 96px;
 }
@@ -389,7 +389,6 @@ img {
 .figures-item {
   width: 400px;
 
-
   text-align: center;
 }
 
@@ -404,7 +403,6 @@ img {
   background-image: url("../img/icon-1.svg");
   background-repeat: no-repeat; 
   background-position: center 20px; 
-
 }
 
 
@@ -444,7 +442,6 @@ img {
 }
 
 
-
 .figures-item p {
   margin: 0;
   margin-top: 27px;
@@ -476,7 +473,7 @@ img {
 }
 
 
-.hotels-form p{
+.hotels-form p {
   line-height: 24px;
   text-align: center;
 }
@@ -758,7 +755,7 @@ img {
 .min:hover svg,
 .min:focus svg,
 .max:hover svg,
-.max:focus svg{
+.max:focus svg {
   fill: var(--basicBlack);
 }
 
@@ -829,8 +826,6 @@ img {
   animation-duration: 0.6s;
 }
 
-
-/* Футер */
 
 .main-footer {
   display: flex;
@@ -1012,15 +1007,14 @@ img {
 
 /* Страница Каталога*/
 
-.inner-header .active{
+.inner-header .active {
   color: var(--lightBrown);
 }
 
 
 .inner-page .filter {
   color: var(--basicWhite);
-  background-color: var(--bgBlue);
-  
+  background-color: var(--bgBlue);  
 }
 
 
@@ -1029,7 +1023,6 @@ img {
   
   background-image: url("../img/background-filter.jpg");
   background-repeat: no-repeat;
-
 }
 
 
@@ -1379,7 +1372,7 @@ img {
 }
 
 
-.arrows-list{
+.arrows-list {
   display: flex;
   align-items: center;
   
@@ -1392,6 +1385,7 @@ img {
 
   list-style: none;
 }
+
 
 .arrows-item button {
   border: none;
@@ -1406,7 +1400,7 @@ img {
 
 
 .arrows-item:hover svg,
-.arrows-item:focus svg{
+.arrows-item:focus svg {
   fill: var(--basicBlack);
   opacity: 1;
 }
@@ -1547,7 +1541,7 @@ img {
 }
 
 
-.catalog-item-title a{
+.catalog-item-title a {
   display: inline-block;
 
   font-size: 21px;
