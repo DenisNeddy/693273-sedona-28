@@ -321,7 +321,7 @@ img {
   
   margin: 0;
   padding: 0;
-  padding-top: 22px;
+  padding-top: 25px;
   padding-bottom: 54px;
 
   list-style: none;
@@ -348,7 +348,7 @@ img {
 
 .advantage-no-view-item p {
   margin: 0;
-  margin-top: 23px;
+  margin-top: 21px;
 
   padding-left: 60px;
   padding-right: 60px;
@@ -399,6 +399,8 @@ img {
 
   width: 75px;
   height: 94px;
+
+  vertical-align: middle;
   
   background-image: url("../img/icon-1.svg");
   background-repeat: no-repeat; 
@@ -413,6 +415,8 @@ img {
 
   width: 75px;
   height: 94px;
+
+  vertical-align: middle;
   
   background-image: url("../img/icon-3.svg");
   background-repeat: no-repeat; 
@@ -426,6 +430,8 @@ img {
 
   width: 64px;
   height: 94px;
+
+  vertical-align: middle;
   
   background-image: url("../img/icon-2.svg");
   background-repeat: no-repeat;
@@ -434,7 +440,7 @@ img {
 
 
 .figures-item h3 {
-	margin-top: 21px;
+	margin-top: 24px;
 
   font-size: 21px;
   line-height: 21px;
@@ -466,7 +472,6 @@ img {
 .hotels-form {
   display: flex;
   flex-direction: column;
-
   position: relative;
 
   background-color: var(--basicWhite); 
@@ -900,6 +905,8 @@ img {
 
   width: 46px;
   height: 46px;
+
+  vertical-align: middle;
 
   background-color: var(--lightBlue);
 }
