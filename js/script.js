@@ -4,9 +4,10 @@ var formButton = document.querySelector(".button-form");
 var arrive = document.querySelector("[name=arrive-date]");
 var departure = document.querySelector("[name=departure-date]");
 
+form.classList.add("close-form");
+
 headButton.addEventListener("click", function (evt) {
 	evt.preventDefault();
-	("close-form");
 	form.classList.toggle("close-form");
 	form.classList.toggle("open-form");
 	arrive.focus();
