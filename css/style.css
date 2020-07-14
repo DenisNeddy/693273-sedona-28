@@ -1030,6 +1030,7 @@ img {
   
   background-image: url("../img/background-filter.jpg");
   background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 
